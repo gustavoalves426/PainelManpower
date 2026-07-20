@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favi.ico">
+    <title>Links por Categoria - Portal</title>
+    <!-- Tailwind CSS para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0d0e15;
+        }
+        /* Efeito de hover vibrante nas linhas e botões */
+        .vibrant-row:hover {
+            background-color: rgba(168, 85, 247, 0.08);
+        }
+        .vibrant-border:hover {
+            border-color: #a855f7;
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.2);
+        }
+        /* Rotação suave do ícone da lista suspensa */
+        .arrow-icon {
+            transition: transform 0.3s ease;
+        }
+        .active .arrow-icon {
+            transform: rotate(180deg);
+        }
+        /* Transição suave de abertura */
+        .content-panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen flex flex-col justify-between font-sans">
+
+    <!-- Cabeçalho Integrado -->
+    <header class="border-b border-gray-800 bg-gray-900/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-purple-600 to-cyan-400 flex items-center justify-center font-bold text-white shadow-lg">
+                    RSA
+                </div>
+                <span class="text-xl font-bold tracking-wider bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                    PORTAL DE SISTEMAS
+                </span>
+            </div>
+            <!-- Menu de Navegação Adaptado -->
+            <nav class="flex items-center space-x-6">
+                <a href="index.html" class="text-gray-400 hover:text-purple-400 font-medium transition-colors text-sm">Plataformas</a>
+                <a href="grupos.html" class="text-purple-400 border-b-2 border-purple-500 pb-1 font-medium text-sm">Links</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-4xl mx-auto px-6 py-12 flex-grow w-full">
+        <div class="mb-8">
+            <h1 class="text-3xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">Acessos</h1>
+            <p class="text-gray-400 mt-2">Clique nos títulos abaixo para expandir e gerenciar os acessos rápidos de cada empresa.</p>
+        </div>
+
+        <!-- Container das Listas Suspensas -->
+        <div class="space-y-4">
+
+            <!-- GRUPO 1: Ericsson -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden transition-all duration-300 vibrant-border">
+                <!-- Botão de Ativação (Header do Acordeão) -->
+                <button onclick="toggleAccordion(this)" class="w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <div class="flex items-center space-x-4">
+                        <span class="w-2.5 h-2.5 rounded-full bg-purple-500 shadow-[0_0_8px_#a855f7]"></span>
+                        <span class="text-lg font-semibold text-white tracking-wide">Ericsson</span>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-400 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <!-- Painel Suspenso (Lista de Links) -->
+                <div class="content-panel">
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-800/50">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gray-800 text-xs text-gray-500 uppercase tracking-wider">
+                                        <th class="py-3 px-4 font-semibold">Nome do Recurso</th>
+                                        <th class="py-3 px-4 font-semibold text-right">Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-800 text-sm">
+                                    <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">ECO</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://connected-operations.ericsson.net/sessions/items" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video1" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">Agendamento RF</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://www.supersaas.com.br/schedule/Manpower/RSA_Claro?day=29&month=6&view=week" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video2" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                                                        <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">Sydle</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://ericsson.sydle.one/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video1" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">RA</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://ericssonremoteaccess2.com/sessions" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video2" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                                                        <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">IOBOX</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://latin-america.webapp.iobox.ericsson.net/#/workflow/workflow-monitor/view/137486/528133" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video1" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">Disponivel</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://exemplo.com/ericsson/db" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video2" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GRUPO 2: Manpower -->
+            <div class="bg-gray-900 border border-gray-800 rounded-xl overflow-hidden transition-all duration-300 vibrant-border">
+                <button onclick="toggleAccordion(this)" class="w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <div class="flex items-center space-x-4">
+                        <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]"></span>
+                        <span class="text-lg font-semibold text-white tracking-wide">Manpower</span>
+                    </div>
+                    <svg class="w-6 h-6 text-gray-400 arrow-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div class="content-panel">
+                    <div class="px-6 pb-6 pt-2 border-t border-gray-800/50">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="border-b border-gray-800 text-xs text-gray-500 uppercase tracking-wider">
+                                        <th class="py-3 px-4 font-semibold">Nome do Recurso</th>
+                                        <th class="py-3 px-4 font-semibold text-right">Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-gray-800 text-sm">
+                                    <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">Teams</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://teams.microsoft.com/v2/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video3" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                     <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">Planilha online</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://exemplo.com/manpower/ponto" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video3" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                     <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">outlook</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://outlook.cloud.microsoft/mail/0/inbox/id/AAQkADlhZGVmYjc3LWM1ZjEtNDhlNS05ZTcxLTYyZTUyZmEzMzJhMQAQAPK0Eyi4aIxPs%2BT5KXRi4pQ%3D?deeplink=mail%2F0%2F%3Fnlp%3D0" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video3" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                                                         <tr class="vibrant-row transition-colors">
+                                        <td class="py-4 px-4 font-medium text-gray-300">PORTAL DE COLABORADORES</td>
+                                        <td class="py-4 px-4 text-right space-x-3">
+                                            <a href="https://web.manpowergroup.com.br/portal_t2/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 transition-colors font-medium">Acessar</a>
+                                            <span class="text-gray-700">|</span>
+                                            <a href="https://youtube.com/watch?v=video3" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Vídeo</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="border-t border-gray-900 bg-gray-950 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
+            &copy; 2026 D&G Development. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Lógica Simples do Acordeão -->
+    <script>
+        function toggleAccordion(button) {
+            const wrapper = button.parentElement;
+            const panel = button.nextElementSibling;
+            
+            // Alterna a classe ativa para rotacionar o ícone de seta
+            wrapper.classList.toggle('active');
+            
+            if (wrapper.classList.contains('active')) {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } else {
+                panel.style.maxHeight = "0";
+            }
+        }
+    </script>
+</body>
+</html>

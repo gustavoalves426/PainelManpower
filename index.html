@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favi.ico">
+    <title>Portal de Acesso</title>
+    <!-- Tailwind CSS para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Personalização sutil para a paleta Tecnológica & Vibrante */
+        body {
+            background-color: #0d0e15;
+        }
+        .vibrant-border:hover {
+            border-color: #a855f7;
+            box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen flex flex-col justify-between font-sans">
+
+    <!-- Cabeçalho -->
+    <header class="border-b border-gray-800 bg-gray-900/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Ícone representativo tecnológico -->
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-tr from-purple-600 to-cyan-400 flex items-center justify-center font-bold text-white shadow-lg">
+                    RSA
+                </div>
+                <span class="text-xl font-bold tracking-wider bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                    PORTAL DE SISTEMAS
+                </span>
+            </div>
+            <!-- Menu de Navegação Integrado -->
+            <nav class="flex items-center space-x-6">
+                <a href="index.html" class="text-purple-400 border-b-2 border-purple-500 pb-1 font-medium text-sm">Plataformas</a>
+                <a href="grupos.html" class="text-gray-400 hover:text-purple-400 font-medium transition-colors text-sm">Links</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="max-w-7xl mx-auto px-6 py-12 flex-grow w-full">
+        <!-- Grid de Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- CARD 1 (Conversor de Coordenadas) -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden transition-all duration-300 vibrant-border flex flex-col h-full group">
+                <!-- Imagem do Card -->
+                <div class="relative h-48 overflow-hidden bg-gray-950">
+                    <img src="https://i0.wp.com/lh4.ggpht.com/_OX5m0XEpfYc/S2Xyt_G_2KI/AAAAAAAABn8/DEMFREIRuTE/grade_utm_g_earth.jpg" 
+                         alt="Conversor de coordenadas" 
+                         class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                </div>
+                <!-- Conteúdo -->
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white group-hover:text-purple-400 transition-colors">
+                            Conversor de coordenadas
+                        </h3>
+                        <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                            Converter coordenadas de forma mais clean e rápida.
+                        </p>
+                    </div>
+                    <!-- Ações -->
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                        <a href="https://gustavoalves426.github.io/painel-ericsson/apps/conversao_de_coordenadas/index.html" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center justify-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-medium text-sm transition-all shadow-md shadow-purple-900/20">
+                            Acessar Sistema
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=3oTnOxoOYo0&list=PLPtANGPdk5Saljw-yBaTPFV0wj4kWJCPV&index=3" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center justify-center px-4 py-2.5 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-300 font-medium text-sm transition-all border border-gray-700">
+                            Ver Vídeo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 (Gerador de KMZ) -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden transition-all duration-300 vibrant-border flex flex-col h-full group">
+                <!-- Imagem do Card -->
+                <div class="relative h-48 overflow-hidden bg-gray-950">
+                    <img src="https://t.ctcdn.com.br/p1861ElXQU3ISo-gXzI4YD7hVOI=/1024x576/smart/i374670.jpeg" 
+                         alt="Gerador KMZ" 
+                         class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                </div>
+                <!-- Conteúdo -->
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white group-hover:text-purple-400 transition-colors">
+                            Gerador de KMZ Automático
+                        </h3>
+                        <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                            Ferramenta para conversão de coordenadas e geração de arquivos para o Google Earth.
+                        </p>
+                    </div>
+                    <!-- Ações -->
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                        <a href="https://gustavoalves426.github.io/painel-ericsson/apps/Claro_kmz/index.html" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center justify-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-medium text-sm transition-all shadow-md shadow-purple-900/20">
+                            Acessar Sistema
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=CJ380NW2RLg&list=PLPtANGPdk5Saljw-yBaTPFV0wj4kWJCPV&index=2" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center justify-center px-4 py-2.5 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-300 font-medium text-sm transition-all border border-gray-700">
+                            Ver Vídeo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 (Extensão ECO) -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden transition-all duration-300 vibrant-border flex flex-col h-full group">
+                <!-- Imagem do Card -->
+                <div class="relative h-48 overflow-hidden bg-gray-950">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMQKRNV_evPp7bB9Ij2IgWOC2kp1InXkWs_8OnaiNlQ&s=10" 
+                         alt="Extensão ECO" 
+                         class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                </div>
+                <!-- Conteúdo -->
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white group-hover:text-purple-400 transition-colors">
+                            Extensão ECO
+                        </h3>
+                        <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                            Extensão ECO criada para auxílio na plataforma ECO.
+                        </p>
+                    </div>
+                    <!-- Ações -->
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                        <a href="https://drive.google.com/file/d/1N5400amfRljA917wAyTg36vvaM5vu2SS/view?usp=sharing" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center justify-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-medium text-sm transition-all shadow-md shadow-purple-900/20">
+                            Download
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=nv6ENebT31k&list=PLPtANGPdk5Saljw-yBaTPFV0wj4kWJCPV&index=4" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center justify-center px-4 py-2.5 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-300 font-medium text-sm transition-all border border-gray-700">
+                            Ver Vídeo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- CARD 3 (Extensão ECO) -->
+            <div class="bg-gray-900 border border-gray-800 rounded-2xl overflow-hidden transition-all duration-300 vibrant-border flex flex-col h-full group">
+                <!-- Imagem do Card -->
+                <div class="relative h-48 overflow-hidden bg-gray-950">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMMQKRNV_evPp7bB9Ij2IgWOC2kp1InXkWs_8OnaiNlQ&s=10" 
+                         alt="Extensão ECO" 
+                         class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
+                </div>
+                <!-- Conteúdo -->
+                <div class="p-6 flex flex-col flex-grow justify-between">
+                    <div>
+                        <h3 class="text-xl font-semibold text-white group-hover:text-purple-400 transition-colors">
+                            (TUTORIAL) Baixando e analisando LOGS
+                        </h3>
+                        <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                            Mostrando como baixar e analisar logs
+                        </p>
+                    </div>
+                    <!-- Ações -->
+                    <div class="mt-6 grid grid-cols-2 gap-4">
+                        <a href="https://www.youtube.com/watch?v=SAjhyGSUggE&list=PLPtANGPdk5Saljw-yBaTPFV0wj4kWJCPV&index=1&t=14s" target="_blank" rel="noopener noreferrer" 
+                           class="flex items-center justify-center px-4 py-2.5 rounded-xl bg-gray-800 hover:bg-gray-700 text-gray-300 font-medium text-sm transition-all border border-gray-700">
+                            Ver Vídeo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="border-t border-gray-900 bg-gray-950 py-6">
+        <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
+            &copy; 2026 D&G Development. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
